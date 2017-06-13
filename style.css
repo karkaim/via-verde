@@ -20,11 +20,46 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 /* Reset CSS
  * --------------------------------------- */
 
+
+ /* Fonts */
+
+ @font-face {
+  font-family: 'Gotham-Medium';
+  src: url('fonts/Gotham-Medium.eot?#iefix') format('embedded-opentype'),  url('fonts/Gotham-Medium.woff') format('woff'), url('fonts/Gotham-Medium.ttf')  format('truetype'), url('fonts/Gotham-Medium.svg#Gotham-Medium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham-Book';
+  src: url('fonts/Gotham-Book.eot?#iefix') format('embedded-opentype'),  url('fonts/Gotham-Book.woff') format('woff'), url('fonts/Gotham-Book.ttf')  format('truetype'), url('fonts/Gotham-Book.svg#Gotham-Book') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham-Bold';
+  src: url('fonts/Gotham-Bold.eot?#iefix') format('embedded-opentype'),  url('fonts/Gotham-Bold.woff') format('woff'), url('fonts/Gotham-Bold.ttf')  format('truetype'), url('fonts/Gotham-Bold.svg#Gotham-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham-Light';
+  src: url('fonts/Gotham-Light.eot?#iefix') format('embedded-opentype'),  url('fonts/Gotham-Light.woff') format('woff'), url('fonts/Gotham-Light.ttf')  format('truetype'), url('fonts/Gotham-Light.svg#Gotham-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* COLOR VARIABLES*/
 /*
 $color-white: #fff ;
 $color-black: #000;
 $color-green: #1fd696;*/
+
+
+
+
 
 :root {
   --color-white: #fff ;
