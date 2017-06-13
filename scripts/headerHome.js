@@ -4,11 +4,11 @@ $(document).ready(function(){
     var myURL = window.location.protocol + "//" + window.location.host + "/tests/viaverde/";
    
     var post_url0 = myURL+"inicio/?ajaxload=true";
-    var post_url1 = myURL+"que-es/?ajaxload=false";
-    var post_url2 = myURL+"beneficios/?ajaxload=false";
-    var post_url3 = myURL+"caracteristicas/?ajaxload=false";
-    var post_url4 = myURL+"instalacion/?ajaxload=false";
-    var post_url5 = myURL+"mantenimiento/?ajaxload=false";
+    var post_url1 = myURL+"categorias_bloques/que-es/?ajaxload=false";
+    var post_url2 = myURL+"categorias_bloques/beneficios/?ajaxload=false";
+    var post_url3 = myURL+"categorias_bloques/caracteristicas/?ajaxload=false";
+    var post_url4 = myURL+"categorias_bloques/instalacion/?ajaxload=false";
+    var post_url5 = myURL+"categorias_bloques/mantenimiento/?ajaxload=false";
     var post_url6 = myURL+"contacto/?ajaxload=false";
 
     
