@@ -203,7 +203,7 @@ ul#menu-menu-1 li a {
     font-size: 14px;
 }
 
-ul#menu-menu-1 li a:hover {
+ul#menu-menu-1 li a:hover, ul#menu-menu-1 li a.select{
   font-family: 'Gotham-Bold';
 }
 
