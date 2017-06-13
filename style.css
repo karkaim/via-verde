@@ -223,4 +223,21 @@ ul#menu-menu-1 li:last-child {
 
 /* HOME */
 
+#post-home-video{height: 100vh;width: 100%;}
+#post-home-video video#bgvid {bottom: 0;height: auto;min-width: 100%; min-height: 100%;position: fixed; right: 0; width: auto;z-index: -100;
+}
+#homeArrow {
+    background-image: url(images/arrows.png);
+    background-size: 177px 87px;
+    background-position: -84px 0px;
+    bottom: 25%;
+    cursor: pointer;
+    height: 87px;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    transform: rotate(90deg);
+    width: 29px;
+}
 
