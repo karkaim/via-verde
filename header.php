@@ -31,13 +31,14 @@
 
 <body>
   <div id="canvas">
-<header id="navegacion">
-    <div id="mobileMenu">
-        <!-- Mobile Logo Here -->
-    </div>
-    <!-- Main Logo Here -->
-    <div id="homeLogo"></div>
-    <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
-</header>
-
-    <div id="primaryContent">
+    <header id="navegacion">
+        <div id="mobileMenu">
+            <!-- Mobile Logo Here -->
+        </div>
+        <div id="headerlogo">
+        <div id="homeLogo"><img id="logosmall" src="<?php echo get_template_directory_uri(); ?>/img/logo.png"></div>
+        <a class="nosotros" href="<?php echo esc_url( home_url( '/' ) ); ?>nosotros">Nosotros</a>
+        </div>
+        <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
+    </header>
+ <div id="primaryContent">
