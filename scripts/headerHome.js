@@ -37,6 +37,10 @@ $(document).ready(function(){
         $("html, body").animate({ scrollTop: $('#home-inicio').offset().top }, 1000);
     });
 
+    $("#homeArrow").click(function() {
+        $("html, body").animate({ scrollTop: $('#home-que-es').offset().top }, 1000);
+    });
+
     //Mobile Open/Close
     $("#menu-item-7-mobile").click(function() {
         $('ul#menu-main-menu').fadeToggle();
