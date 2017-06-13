@@ -1,6 +1,6 @@
 
 $(document).ready(function(){
-    console.log('test');
+    
     var myURL = window.location.protocol + "//" + window.location.host + "/tests/viaverde/";
    
     var post_url0 = myURL+"inicio/?ajaxload=true";
@@ -26,56 +26,63 @@ $(document).ready(function(){
     $("#home-contacto").load(post_url6);
     
     
-    $("ul#menu-main-menu li a").removeAttr("href");
-    $("ul#menu-main-menu li#menu-item-62 a").html('&nbsp; &nbsp;');
+    $('.menu-menu-1-container ul li a').click(function(e){
+        e.preventDefault();
+    });
+
+    //$("ul#menu-main-menu li a").removeAttr("href");
     
-    $("#menu-item-6, #menu-item-6-mobile").click(function() {
+    
+    $("#homeLogo").click(function() {
         $("html, body").animate({ scrollTop: $('#home-inicio').offset().top }, 1000);
     });
 
+    //Mobile Open/Close
     $("#menu-item-7-mobile").click(function() {
         $('ul#menu-main-menu').fadeToggle();
     });
 
+    //Show Menu after hidden on moobile
     $(window).resize(function() { 
     	if ($(window).width() > 729) 
     		$('ul#menu-main-menu').show(); 
     	});
     
-    $(".menu-main-menu-container ul#menu-main-menu li a").click(function() {
+    $(".menu-menu-1-container ul li a").click(function() {
                              
         var theId = $(this).parent().attr('id');
         //console.log('ID: '+theId);
         switch(theId){
-        case "menu-item-6"://home
-        $("html, body").animate({ scrollTop: $('#home-inicio').offset().top }, 1000);
-        if ($(window).width() < 729) 
-        	$('ul#menu-main-menu').fadeOut(); 
-        break;
-        case "menu-item-7"://about us
+
+        case "menu-item-27":
         $("html, body").animate({ scrollTop: $('#home-que-es').offset().top }, 1000);
         if ($(window).width() < 729) 
         	$('ul#menu-main-menu').fadeOut(); 
         break;
-        case "menu-item-650"://Xtreme Activities
+        case "menu-item-28":
         $("html, body").animate({ scrollTop: $('#home-beneficios').offset().top }, 1000);
         if ($(window).width() < 729) 
         	$('ul#menu-main-menu').fadeOut(); 
         break;
-        case "menu-item-3289"://Gallery
+        case "menu-item-29":
         $("html, body").animate({ scrollTop: $('#home-caracteristicas').offset().top }, 1000);
         if ($(window).width() < 729) 
         	$('ul#menu-main-menu').fadeOut(); 
         break
-        case "menu-item-9"://Contact
+        case "menu-item-33":
         $("html, body").animate({ scrollTop: $('#home-instalacion').offset().top }, 1000);
         if ($(window).width() < 729) 
         	$('ul#menu-main-menu').fadeOut(); 
         break;
-        case "menu-item-3290"://Contact
+        case "menu-item-34":
         $("html, body").animate({ scrollTop: $('#home-mantenimiento').offset().top }, 1000);
         if ($(window).width() < 729) 
         	$('ul#menu-main-menu').fadeOut(); 
+        break;
+        case "menu-item-30":
+        $("html, body").animate({ scrollTop: $('#home-contacto').offset().top }, 1000);
+        if ($(window).width() < 729) 
+            $('ul#menu-main-menu').fadeOut(); 
         break;
         }
 
@@ -85,10 +92,19 @@ $(document).ready(function(){
     });
     
     $(window).scroll( function(){
-        var posScroll = $(window).scrollTop();
         //var posContact = $('#home-contact').offset().top;
+
+        var scroll = $(window).scrollTop();
+
+         if (scroll > 200) {
+             $("body").addClass("change");
+         } else {
+             $("body").removeClass("change");
+         }
        
     }); 
+
+
 
 
 

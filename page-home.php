@@ -17,6 +17,7 @@ if($ajaxload == false)
 <section class="section-home" id="home-caracteristicas"></section>
 <section class="section-home" id="home-instalacion"></section>
 <section class="section-home" id="home-mantenimiento"></section>
+<section class="section-home" id="home-contacto"></section>
 <section class="section-home" id="home-footer">
 	<ul>
 		<li>
