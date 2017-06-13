@@ -16,23 +16,25 @@ if($ajaxload == false)
   ?>
 
 	<article class="postWrapper" id="post-<?php the_ID(); ?>">
-            
-            <div id="tumbnail">
-                <?php 
-                    if ( has_post_thumbnail() ) 
-                        the_post_thumbnail(); 
-                ?>
-            </div>
                 
 		<header>
 
         <a href="<?php the_permalink(); ?>">
-		    <h1 class="postTitle"><?php the_title(); ?> TAXONOMY Cat Bloques</h1>
+		    <h1 class="postTitle"><?php the_title(); ?></h1>
         </a>
 
 		</header>
       
-		<section class="post"><?php the_excerpt(); ?></section>
+		<section class="post">
+      <?php the_excerpt(); ?>
+      <div id="tumbnail">
+          <?php 
+          if ( has_post_thumbnail() ) 
+              the_post_thumbnail(); 
+          ?>
+      </div>
+      
+    </section>
 		
 
     </article>
