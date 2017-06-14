@@ -15,9 +15,9 @@ if($ajaxload == false)
   
   ?>
 
-	<article class="postWrapper" id="post-<?php the_ID(); ?>">
+	<article id="post-<?php the_ID(); ?>">
             
-          <div class="postWrapper" id="post-home-video">
+          <div id="post-home-video">
               <video muted autoplay loop id="bgvid">
                   <source src="<?php bloginfo('template_url'); ?>/video/VIAVERDE_WEB_HOME_FINAL.webm" type="video/webm">
                   <source src="<?php bloginfo('template_url'); ?>/video/VIAVERDE_WEB_HOME_FINAL.m4v" type="video/mp4">

@@ -211,7 +211,7 @@ ul#menu-menu-1 li:last-child {
     border-right:none;
 }
 
-
+/* HOME */
 
 .section-home {
     min-height: 800px;
@@ -224,12 +224,10 @@ ul#menu-menu-1 li:last-child {
   background-color: transparent;
 }
 
-
-/* HOME */
-
 #post-home-video{height: 100vh;width: 100%;}
 #post-home-video video#bgvid {bottom: 0;height: auto;min-width: 100%; min-height: 100%;position: fixed; right: 0; width: auto;z-index: -100;
 }
+
 #homeArrow {
     background-image: url(images/arrows.png);
     background-size: 177px 87px;
@@ -243,6 +241,19 @@ ul#menu-menu-1 li:last-child {
     right: 0;
     transform: rotate(90deg);
     width: 29px;
+}
+
+/* Bloques */
+
+.postWrapper {
+    width: 250px;
+    background-color: #fff;
+    display: inline-block;
+    padding: 5px;
+    box-sizing: border-box;
+    -webkit-box-shadow: 15px 15px 0px 3px rgba(0,0,0,0.2);
+    -moz-box-shadow: 15px 15px 0px 3px rgba(0,0,0,0.2);
+    box-shadow: 15px 15px 0px 3px rgba(0,0,0,0.2);
 }
 
 /* AJAX BLOCK */
