@@ -9,7 +9,7 @@
   if (have_posts()) : while (have_posts()) : the_post();
   ?>
 
-	<article class="postWrapper" id="post-<?php the_ID(); ?>">
+	<article id="post-<?php the_ID(); ?>">
 
 	<header>
 	    <h1 class="postTitle"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h1>

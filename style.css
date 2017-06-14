@@ -109,14 +109,7 @@ caption,th {
     text-align: left;
     
 }
-h1,h2,h3,h4,h5,h6 {
-    font-family: 'futura-pt', sans-serif;
-    font-weight: 800;
-    font-size: 100%;
-    margin:0;
-    padding:0;
-    /*color:#444;*/
-}
+
 q:before,q:after {
     content:'';
 }
@@ -157,7 +150,15 @@ img {
 }
 
 #headerlogo #homeLogo {
-    width: 300px;
+  width: 300px;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.change #headerlogo #homeLogo {
+    width: 175px;
 }
 
 a.nosotros {
@@ -216,7 +217,15 @@ ul#menu-menu-1 li:last-child {
 .section-home {
     min-height: 800px;
     width: 100%;
+    height: 100vh;
     background-color: #fff;
+    position: relative;
+}
+
+.section-home h1.bloqueTitulo {
+    text-transform: uppercase;
+    font-size: 3em;
+    letter-spacing: -.05em;
 }
 
 #home-inicio.section-home{
@@ -243,11 +252,72 @@ ul#menu-menu-1 li:last-child {
     width: 29px;
 }
 
+section#home-que-es {
+    background: url(img/fondoquees.jpg) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+img.icon {
+    position: absolute;
+    left: -130px;
+    width: 120px;}
+
+article#post-39 {
+    top: 28%;
+    left: 13%;
+}
+
+article#post-50 {
+    left: 13%;
+    top: 60%;
+}
+
+article#post-54 {
+    right: 6%;
+    top: 40%;
+}
+
+article#post-58 {
+    left: 38%;
+    top: 43%;
+}
+
+article#post-58 img.icon {
+    right: -130px;
+    left: initial;
+}
+
+#home-que-es h1.bloqueTitulo {
+    text-align: center;
+    padding-top: 150px;
+}
+
+
+section#home-beneficios {
+    background: url(img/fondobeneficios.jpg) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+section#home-caracteristicas {
+    background: url(img/fondocaracteristicas.jpg) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 /* Bloques */
 
 .postWrapper {
-    position: relative;
-    width: 250px;
+    position: absolute;
+    width: 200px;
     background-color: #fff;
     display: inline-block;
     padding: 20px;
@@ -275,6 +345,7 @@ ul#menu-menu-1 li:last-child {
     text-transform: uppercase;
     margin-left: 5px;
     position: relative;
+    font-size: 0.8em;
 }
 
 .postWrapper h1.postTitle:after{
@@ -297,9 +368,9 @@ ul#menu-menu-1 li:last-child {
     content: "";
     width: 0px;
     height: 0px;
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent;
-    border-left: 15px solid #ff0000;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 10px solid #ff0000;
     display: block;
 }
 
@@ -309,7 +380,7 @@ ul#menu-menu-1 li:last-child {
 }
 
 .postWrapper .post p {
-    font-size: .9em;
+    font-size: .8em;
 }
 
 .postWrapper .post #tumbnail {
@@ -317,17 +388,69 @@ ul#menu-menu-1 li:last-child {
 }
 
 /* AJAX BLOCK */
+
 #secondaryContent {
     background-color: rgba(255,255,255,1);
-    border: 1px solid red;
+    border: 1px solid #000;
     display: block;
-    height: 70vh;
+    min-height: 70vh;
     left: 0;
     margin: 0 auto;
     overflow-y: scroll;
     position: fixed;
     right: 0;
     top: 20%;
-    width: 90%;
+    width: 80%;
     z-index: 5;
 }
+
+#closeContent {
+    float: right;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    border: 3px solid #ff0000;
+    position: relative;
+    margin-top: 15px;
+    margin-right: 15px;
+}
+
+#closeContent:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: "\274c";
+    font-size: 20px;
+    color: #ff0000;
+    line-height: 35px;
+    text-align: center;
+}
+
+#single-post-container {
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+#single-post-container h1.postTitle {
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: -.05em;
+    width: 100%;
+    border-bottom: 1px solid #d4d5d7;
+    margin-bottom: 25px;
+}
+
+#single-post-container p {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.3em;
+    line-height: 1.4;
+}
+
+
+
+
+
+

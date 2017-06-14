@@ -34,7 +34,7 @@ $(document).ready(function(){
 
     function ajaxLoadBloques(){
 
-        $(".section-home header a").click(function(){
+        $("a.titleBlock, a.greenCircle").click(function(){
             console.log('clicked');
             $.ajaxSetup({cache:false});
             var post_url = $(this).attr("href")+"?ajaxload=false";

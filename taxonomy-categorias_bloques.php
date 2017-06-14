@@ -23,7 +23,7 @@ if($ajaxload == false)
   ?>
 
 	<article class="postWrapper" id="post-<?php the_ID(); ?>">
-
+      <img class="icon" src="<?php echo get_post_meta( get_the_ID(), 'icon', true ); ?>">
     <a class="greenCircle" href="<?php the_permalink(); ?>">+</a>
 
 		<header>

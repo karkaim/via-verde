@@ -20,7 +20,7 @@ if($ajaxload == false)
 <section class="section-home" id="home-contacto"></section>
 
 <div id="secondaryContent" style="display: none;">
-	<div id="closeContent">X</div>
+	<div id="closeContent"></div>
 	<div id="single-post-container"></div>
 </div>
 
