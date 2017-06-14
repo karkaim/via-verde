@@ -12,11 +12,20 @@ if(isset($_GET['ajaxload']))
 if($ajaxload == false)
     get_header();
 
-  if (have_posts()) : while (have_posts()) : the_post();
+  if (have_posts()) : 
+  
+  $term_id = get_queried_object()->term_id;
+  $term = get_term( $term_id );
+  $termName = $term->name;
+  echo '<h1 class="bloqueTitulo">'.$termName.'</h1>';
+
+    while (have_posts()) : the_post();
   ?>
 
 	<article class="postWrapper" id="post-<?php the_ID(); ?>">
+
     <a class="greenCircle" href="<?php the_permalink(); ?>">+</a>
+
 		<header>
 
         <a class="titleBlock" href="<?php the_permalink(); ?>">
