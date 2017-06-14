@@ -147,6 +147,7 @@ img {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    cursor: pointer;
 }
 
 #headerlogo #homeLogo {
@@ -217,8 +218,8 @@ ul#menu-menu-1 li:last-child {
 .section-home {
     min-height: 800px;
     width: 100%;
-    margin: 0 auto;
-    padding-bottom: 9%;
+    height: 100vh;
+
     background-color: #fff;
     position: relative;
 }
@@ -264,8 +265,9 @@ section#home-que-es {
 
 img.icon {
     position: absolute;
-    left: -130px;
-    width: 120px;}
+    left: -85px;
+    width: 80px;}
+
 
 article#post-39 {
     top: 28%;
@@ -288,7 +290,7 @@ article#post-58 {
 }
 
 article#post-58 img.icon {
-    right: -130px;
+    right: -100px;
     left: initial;
 }
 
@@ -321,7 +323,7 @@ section#home-caracteristicas {
     width: 200px;
     background-color: #fff;
     display: inline-block;
-    padding: 20px;
+    padding: 10px;
     box-sizing: border-box;
     -webkit-box-shadow: 15px 15px 0px 3px rgba(0,0,0,0.2);
     -moz-box-shadow: 15px 15px 0px 3px rgba(0,0,0,0.2);
@@ -340,8 +342,14 @@ section#home-caracteristicas {
     font-size: 20px;
     line-height: 20px;
     color: #38b44a;
-}
+    cursor: pointer;
 
+
+    -webkit-transition: all .3s linear;
+     -ms-transition: all.3s linear;
+     transition: all .3s linear;
+}
+.postWrapper a.greenCircle:hover{box-shadow: 3px 3px 2px #888888;}
 .postWrapper h1.postTitle {
     text-transform: uppercase;
     margin-left: 5px;
