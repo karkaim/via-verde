@@ -30,7 +30,7 @@ if($ajaxload == false)
       <div id="tumbnail">
           <?php 
           if ( has_post_thumbnail() ) 
-              the_post_thumbnail(); 
+              the_post_thumbnail('medium'); 
           ?>
       </div>
       

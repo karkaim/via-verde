@@ -11,13 +11,13 @@ $(document).ready(function(){
     var post_url5 = myURL+"categorias_bloques/mantenimiento/?ajaxload=false";
     var post_url6 = myURL+"contacto/?ajaxload=false";
 
-    
-    
-    
     $.ajaxSetup({cache:false});
     
-    //$("#home-inicio").load(post_url0, function(){ $('.cycle-slideshow').cycle();});
-    $("#home-inicio").load(post_url0);
+    $("#home-inicio").load(post_url0, function(){
+        $("#homeArrow").click(function() {
+            $("html, body").animate({ scrollTop: $('#home-que-es').offset().top }, 1000);
+        });
+    });
     $("#home-que-es").load(post_url1);
     $("#home-beneficios").load(post_url2);
     $("#home-caracteristicas").load(post_url3);
@@ -26,20 +26,13 @@ $(document).ready(function(){
     $("#home-contacto").load(post_url6);
     
     
-    $('.menu-menu-1-container ul li a').click(function(e){
-        e.preventDefault();
-    });
-
-    //$("ul#menu-main-menu li a").removeAttr("href");
-    
+    $('.menu-menu-1-container ul li a').click(function(e){e.preventDefault();});
     
     $("#homeLogo").click(function() {
         $("html, body").animate({ scrollTop: $('#home-inicio').offset().top }, 1000);
     });
 
-    $("#homeArrow").click(function() {
-        $("html, body").animate({ scrollTop: $('#home-que-es').offset().top }, 1000);
-    });
+    
 
     //Mobile Open/Close
     $("#menu-item-7-mobile").click(function() {
