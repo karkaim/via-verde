@@ -32,10 +32,22 @@ $(document).ready(function(){
         $("html, body").animate({ scrollTop: $('#home-inicio').offset().top }, 1000);
     });
 
+    $("a.nosotros").click(function(e){
+        e.preventDefault();
+        $.ajaxSetup({cache:false});
+        var post_url = $(this).attr("href")+"?ajaxload=false";
+        var link_id = $(this).attr('id');
+        
+        $("#secondaryContent").fadeOut();
+        $("#single-post-container").load(post_url, function(){$("#secondaryContent").fadeIn('fast');});
+
+        return false;
+    });
+
     function ajaxLoadBloques(){
 
         $("a.titleBlock, a.greenCircle").click(function(){
-            console.log('clicked');
+            //console.log('clicked');
             $.ajaxSetup({cache:false});
             var post_url = $(this).attr("href")+"?ajaxload=false";
             var link_id = $(this).attr('id');
