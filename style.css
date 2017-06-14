@@ -245,3 +245,18 @@ ul#menu-menu-1 li:last-child {
     width: 29px;
 }
 
+/* AJAX BLOCK */
+#secondaryContent {
+    background-color: rgba(255,255,255,1);
+    border: 1px solid red;
+    display: block;
+    height: 70vh;
+    left: 0;
+    margin: 0 auto;
+    overflow-y: scroll;
+    position: fixed;
+    right: 0;
+    top: 20%;
+    width: 90%;
+    z-index: 5;
+}

@@ -18,11 +18,11 @@ $(document).ready(function(){
             $("html, body").animate({ scrollTop: $('#home-que-es').offset().top }, 1000);
         });
     });
-    $("#home-que-es").load(post_url1);
-    $("#home-beneficios").load(post_url2);
-    $("#home-caracteristicas").load(post_url3);
-    $("#home-instalacion").load(post_url4);
-    $("#home-mantenimiento").load(post_url5);
+    $("#home-que-es").load(post_url1,ajaxLoadBloques);
+    $("#home-beneficios").load(post_url2,ajaxLoadBloques);
+    $("#home-caracteristicas").load(post_url3,ajaxLoadBloques);
+    $("#home-instalacion").load(post_url4,ajaxLoadBloques);
+    $("#home-mantenimiento").load(post_url5,ajaxLoadBloques);
     $("#home-contacto").load(post_url6);
     
     
@@ -32,7 +32,27 @@ $(document).ready(function(){
         $("html, body").animate({ scrollTop: $('#home-inicio').offset().top }, 1000);
     });
 
-    
+    function ajaxLoadBloques(){
+
+        $(".section-home header a").click(function(){
+            console.log('clicked');
+            $.ajaxSetup({cache:false});
+            var post_url = $(this).attr("href")+"?ajaxload=false";
+            var link_id = $(this).attr('id');
+            
+            $("#secondaryContent").fadeOut();
+            $("#single-post-container").load(post_url, function(){$("#secondaryContent").fadeIn('fast');});
+
+            return false;
+        });
+    }
+
+    $('#closeContent').click(function(){
+        $("#secondaryContent").fadeOut('fast',function(){
+            $("#single-post-container").empty();
+        });
+            
+    });
 
     //Mobile Open/Close
     $("#menu-item-7-mobile").click(function() {
