@@ -16,10 +16,10 @@ if($ajaxload == false)
   ?>
 
 	<article class="postWrapper" id="post-<?php the_ID(); ?>">
-                
+    <a class="greenCircle" href="<?php the_permalink(); ?>">+</a>
 		<header>
 
-        <a href="<?php the_permalink(); ?>">
+        <a class="titleBlock" href="<?php the_permalink(); ?>">
 		    <h1 class="postTitle"><?php the_title(); ?></h1>
         </a>
 

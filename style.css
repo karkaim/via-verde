@@ -246,14 +246,68 @@ ul#menu-menu-1 li:last-child {
 /* Bloques */
 
 .postWrapper {
+    position: relative;
     width: 250px;
     background-color: #fff;
     display: inline-block;
-    padding: 5px;
+    padding: 20px;
     box-sizing: border-box;
     -webkit-box-shadow: 15px 15px 0px 3px rgba(0,0,0,0.2);
     -moz-box-shadow: 15px 15px 0px 3px rgba(0,0,0,0.2);
     box-shadow: 15px 15px 0px 3px rgba(0,0,0,0.2);
+}
+
+.postWrapper a.greenCircle {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #38b44a;
+    text-align: center;
+    border-radius: 17px;
+    font-size: 20px;
+    line-height: 20px;
+    color: #38b44a;
+}
+
+.postWrapper h1.postTitle {
+    text-transform: uppercase;
+    margin-left: 5px;
+    position: relative;
+}
+
+.postWrapper h1.postTitle:after{
+    content: "";
+    width: 30px;
+    height: 1px;
+    background-color: #231f20;
+    display: block;
+    position: absolute;
+    bottom: -8px;
+}
+
+.postWrapper a.titleBlock {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.postWrapper a.titleBlock:before{
+  content:url('img/tituloarrow.png'); /* with class ModalCarrot ??*/
+}
+
+.postWrapper .post {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.postWrapper .post p {
+    font-size: .9em;
+}
+
+.postWrapper .post #tumbnail {
+    margin-top: 10px;
 }
 
 /* AJAX BLOCK */
