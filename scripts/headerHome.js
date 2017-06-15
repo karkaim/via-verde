@@ -60,10 +60,22 @@ $(document).ready(function(){
 
     function ajaxLoadBloques(){
 
-        $("a.titleBlock, a.greenCircle").click(function(){
+        $(".es a.titleBlock, .es a.greenCircle").click(function(){
             //console.log('clicked');
             $.ajaxSetup({cache:false});
             var post_url = $(this).attr("href")+"?ajaxload=false";
+            var link_id = $(this).attr('id');
+            
+            $("#secondaryContent").fadeOut();
+            $("#single-post-container").load(post_url, function(){$("#secondaryContent").fadeIn('fast');});
+
+            return false;
+        });
+
+        $(".en a.titleBlock, .en a.greenCircle").click(function(){
+            //console.log('clicked');
+            $.ajaxSetup({cache:false});
+            var post_url = $(this).attr("href")+"&ajaxload=false";
             var link_id = $(this).attr('id');
             
             $("#secondaryContent").fadeOut();

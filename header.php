@@ -44,7 +44,7 @@
         <?php if(ICL_LANGUAGE_CODE=='es'): ?>
             <a class="select" href="#">ESP</a><a href="<?php echo esc_url( home_url( '/' ) ); ?>/?lang=en">ENG</a>
         <?php elseif(ICL_LANGUAGE_CODE=='en'): ?>
-            <a href="http://lapatronapoloclub.com/lapatrona/">ESP</a><a class="select" href="#">ENG</a>
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>/?lang=es">ESP</a><a class="select" href="#">ENG</a>
          <?php endif;?>
         </nav>
     </header>

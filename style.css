@@ -234,12 +234,12 @@ nav.menu-idiomas {
     width: 100%;
     padding: 5px 10px;
     text-decoration: underline;
-    font-family: 'Gotham-Bold';
+    font-family: 'Gotham-Book'; 
     font-size: 15px;
 }
 
 .menu-idiomas a.select {
-    font-family: 'Gotham-Book';
+    font-family: 'Gotham-Bold';
 }
 
 /* HOME */
@@ -318,7 +318,7 @@ article#post-58, article#post-232 {
     top: 43%;
 }
 
-article#post-58 img.icon, article#post-39 img.icon{
+article#post-58 img.icon, article#post-232 img.icon{
     right: -100px;
     left: initial;
 }
