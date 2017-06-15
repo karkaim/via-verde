@@ -317,6 +317,24 @@ section#home-caracteristicas {
   background-size: cover;
 }
 
+section#home-instalacion {
+    background: url(img/fondoinstalacion.jpg) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+section#home-mantenimiento {
+    background: url(img/fondomantenimiento.jpg) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+
 /* Bloques */
 
 .postWrapper {
