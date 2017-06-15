@@ -40,5 +40,12 @@
         <a class="nosotros" href="<?php echo esc_url( home_url( '/' ) ); ?>nosotros">Nosotros</a>
         </div>
         <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
+        <nav class="menu-idiomas">
+        <?php if(ICL_LANGUAGE_CODE=='es'): ?>
+            <a class="select" href="#">ESP</a><a href="<?php echo esc_url( home_url( '/' ) ); ?>/?lang=en">ENG</a>
+        <?php elseif(ICL_LANGUAGE_CODE=='en'): ?>
+            <a href="http://lapatronapoloclub.com/lapatrona/">ESP</a><a class="select" href="#">ENG</a>
+         <?php endif;?>
+        </nav>
     </header>
  <div id="primaryContent">

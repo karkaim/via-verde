@@ -218,6 +218,30 @@ ul#menu-menu-1 li:last-child, ul#menu-menu-ingles  li:last-child {
     border-right:none;
 }
 
+nav.menu-idiomas {
+	position: absolute;
+    right: 0;
+    height: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.menu-idiomas a {
+    width: 100%;
+    padding: 5px 10px;
+    text-decoration: underline;
+    font-family: 'Gotham-Bold';
+    font-size: 15px;
+}
+
+.menu-idiomas a.select {
+    font-family: 'Gotham-Book';
+}
+
 /* HOME */
 
 .section-home {
