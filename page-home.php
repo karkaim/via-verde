@@ -12,12 +12,12 @@ if($ajaxload == false)
 ?>
 
 <section class="section-home" id="home-inicio"></section>
-<section class="section-home" id="home-que-es"></section>
-<section class="section-home" id="home-beneficios"></section>
-<section class="section-home" id="home-caracteristicas"></section>
-<section class="section-home" id="home-instalacion"></section>
-<section class="section-home" id="home-mantenimiento"></section>
-<section class="section-home" id="home-contacto"></section>
+<section class="section-home es" id="home-que-es"></section>
+<section class="section-home es" id="home-beneficios"></section>
+<section class="section-home es" id="home-caracteristicas"></section>
+<section class="section-home es" id="home-instalacion"></section>
+<section class="section-home es" id="home-mantenimiento"></section>
+<section class="section-home es" id="home-contacto"></section>
 
 <div id="secondaryContent" style="display: none;">
 	<div id="closeContent"></div>

@@ -274,27 +274,27 @@ img.icon {
     width: 80px;}
 
 
-article#post-39 {
+article#post-39, article#post-229 {
     top: 28%;
     left: 13%;
 }
 
-article#post-50 {
+article#post-50, article#post-230 {
     left: 13%;
     top: 60%;
 }
 
-article#post-54 {
+article#post-54, article#post-231 {
     right: 6%;
     top: 40%;
 }
 
-article#post-58 {
+article#post-58, article#post-232 {
     left: 38%;
     top: 43%;
 }
 
-article#post-58 img.icon {
+article#post-58 img.icon, article#post-39 img.icon{
     right: -100px;
     left: initial;
 }
@@ -319,22 +319,22 @@ section#home-beneficios {
     padding-left: 40px;
 }
 
-article#post-92 {
+article#post-92, article#post-226 {
     top: 28%;
     right: 4%;
 }
 
-article#post-85 {
+article#post-85, article#post-227 {
     right: 28%;
     top: 60%;
 }
 
-article#post-81 {
+article#post-81, article#post-228 {
     right: 30%;
     top: 20%;
 }
 
-article#post-63 {
+article#post-63, article#post-233 {
     left: 13%;
     top: 60%;
 }
@@ -353,22 +353,22 @@ section#home-caracteristicas {
     padding-right: 40px;
 }
 
-article#post-110 {
+article#post-110, article#post-223 {
     top: 70%;
     right: 4%;
 }
 
-article#post-110 img.icon {
+article#post-110 img.icon, article#post-223 img.icon{
     margin-top: -115px;
     left: 50px;
 }
 
-article#post-109 {
+article#post-109, article#post-224 {
     right: 40%;
     top: 30%;
 }
 
-article#post-108 {
+article#post-108, article#post-225 {
     left: 13%;
     top: 60%;
 }
@@ -389,27 +389,27 @@ section#home-instalacion {
     padding-right: 40px;
 }
 
-article#post-114 {
+article#post-114, article#post-219 {
     right: 8%;
     top: 60%;
 }
 
-article#post-113 {
+article#post-113, article#post-220 {
     left: 13%;
     top: 60%;
 }
 
-article#post-112 {
+article#post-112, article#post-221 {
     right: 47%;
     top: 44%;
 }
 
-article#post-112 img.icon {
+article#post-112 img.icon, article#post-221 img.icon{
     margin-top: -115px;
     left: 50px;
 }
 
-article#post-111 {
+article#post-111, article#post-222 {
     left: 13%;
     top: 20%;
 }
@@ -428,17 +428,17 @@ section#home-mantenimiento {
     padding-left: 40px;
 }
 
-article#post-117 {
+article#post-117, article#post-216 {
     top: 63%;
     left: 35%;
 }
 
-article#post-116 {
+article#post-116, article#post-217 {
     right: 12%;
     top: 23%;
 }
 
-article#post-115 {
+article#post-115, article#post-218 {
     left: 10%;
     top: 28%;
 }
