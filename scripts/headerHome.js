@@ -34,6 +34,7 @@ $(document).ready(function(){
 
     $("a.nosotros").click(function(e){
         e.preventDefault();
+        console.log('clicked');
         $.ajaxSetup({cache:false});
         var post_url = $(this).attr("href")+"?ajaxload=false";
         var link_id = $(this).attr('id');

@@ -219,8 +219,7 @@ ul#menu-menu-1 li:last-child {
 .section-home {
     min-height: 800px;
     width: 100%;
-    height: 100vh;
-
+    padding-bottom:9%;
     background-color: #fff;
     position: relative;
 }
@@ -297,7 +296,8 @@ article#post-58 img.icon {
 
 #home-que-es h1.bloqueTitulo {
     text-align: center;
-    padding-top: 150px;
+    padding-top: 135px;
+
 }
 
 
@@ -309,6 +309,31 @@ section#home-beneficios {
   background-size: cover;
 }
 
+#home-beneficios h1.bloqueTitulo {
+    padding-top: 235px;
+    padding-left: 40px;
+}
+
+article#post-92 {
+    top: 28%;
+    right: 4%;
+}
+
+article#post-85 {
+    right: 28%;
+    top: 60%;
+}
+
+article#post-81 {
+    right: 30%;
+    top: 20%;
+}
+
+article#post-63 {
+    left: 13%;
+    top: 60%;
+}
+
 section#home-caracteristicas {
     background: url(img/fondocaracteristicas.jpg) no-repeat center center; 
   -webkit-background-size: cover;
@@ -316,6 +341,33 @@ section#home-caracteristicas {
   -o-background-size: cover;
   background-size: cover;
 }
+
+#home-caracteristicas h1.bloqueTitulo {
+    float: right;
+    padding-top: 235px;
+    padding-right: 40px;
+}
+
+article#post-110 {
+    top: 70%;
+    right: 4%;
+}
+
+article#post-110 img.icon {
+    margin-top: -115px;
+    left: 50px;
+}
+
+article#post-109 {
+    right: 40%;
+    top: 30%;
+}
+
+article#post-108 {
+    left: 13%;
+    top: 60%;
+}
+
 
 section#home-instalacion {
     background: url(img/fondoinstalacion.jpg) no-repeat center center; 
@@ -325,12 +377,65 @@ section#home-instalacion {
   background-size: cover;
 }
 
+
+#home-instalacion h1.bloqueTitulo {
+    float: right;
+    padding-top: 235px;
+    padding-right: 40px;
+}
+
+article#post-114 {
+    right: 8%;
+    top: 60%;
+}
+
+article#post-113 {
+    left: 13%;
+    top: 60%;
+}
+
+article#post-112 {
+    right: 47%;
+    top: 44%;
+}
+
+article#post-112 img.icon {
+    margin-top: -115px;
+    left: 50px;
+}
+
+article#post-111 {
+    left: 13%;
+    top: 20%;
+}
+
 section#home-mantenimiento {
     background: url(img/fondomantenimiento.jpg) no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+
+#home-mantenimiento h1.bloqueTitulo {
+    padding-top: 180px;
+    padding-left: 40px;
+}
+
+article#post-117 {
+    top: 63%;
+    left: 35%;
+}
+
+article#post-116 {
+    right: 12%;
+    top: 23%;
+}
+
+article#post-115 {
+    left: 10%;
+    top: 28%;
 }
 
 
@@ -390,6 +495,7 @@ section#home-mantenimiento {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+    margin-top: 13px;
 }
 
 .postWrapper a.titleBlock:before{
