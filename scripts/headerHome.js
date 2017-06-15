@@ -78,7 +78,7 @@ $(document).ready(function(){
     		$('ul#menu-main-menu').show(); 
     	});
     
-    $('#menu-menu-1 a').each(function() {
+    $('#menu-menu-1 a, #menu-menu-ingles a').each(function() {
         var href = $(this).attr('href');
         $(this).attr("href", "#home-" + href.match(/([^\/]*)\/*$/)[1]);
 
@@ -100,11 +100,11 @@ $(document).ready(function(){
     $(document).on("scroll", onScroll);
     function onScroll(event){
     var scrollPos = $(document).scrollTop();
-        $('#menu-menu-1 a').each(function () {
+        $('#menu-menu-1 a, #menu-menu-ingles a').each(function () {
             var currLink = $(this);
             var refElement = $(currLink.attr("href"));
             if (refElement.position().top - 145 <= scrollPos && refElement.position().top - 14 + refElement.height() > scrollPos) {
-                $('#menu-menu-1 a').removeClass("select");
+                $('#menu-menu-1 a, #menu-menu-ingles a').removeClass("select");
                 currLink.addClass("select");
             }
             else{
