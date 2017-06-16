@@ -45,22 +45,9 @@ $(document).ready(function(){
         $("html, body").animate({ scrollTop: $('#home-inicio').offset().top }, 1000);
     });
 
-    $("a.nosotros").click(function(e){
-        e.preventDefault();
-        console.log('clicked');
-        $.ajaxSetup({cache:false});
-        var post_url = $(this).attr("href")+"?ajaxload=false";
-        var link_id = $(this).attr('id');
-        
-        $("#secondaryContent").fadeOut();
-        $("#single-post-container").load(post_url, function(){$("#secondaryContent").fadeIn('fast');});
-
-        return false;
-    });
-
     function ajaxLoadBloques(){
 
-        $(".es a.titleBlock, .es a.greenCircle").click(function(){
+        $(".es a.titleBlock, .es a.greenCircle, a.nosotros.es").click(function(){
             //console.log('clicked');
             $.ajaxSetup({cache:false});
             var post_url = $(this).attr("href")+"?ajaxload=false";
@@ -68,11 +55,11 @@ $(document).ready(function(){
             
             $("#secondaryContent").fadeOut();
             $("#single-post-container").load(post_url, function(){$("#secondaryContent").fadeIn('fast');});
-
+            $("body").addClass("openwindow");
             return false;
         });
 
-        $(".en a.titleBlock, .en a.greenCircle").click(function(){
+        $(".en a.titleBlock, .en a.greenCircle, a.nosotros.en").click(function(){
             //console.log('clicked');
             $.ajaxSetup({cache:false});
             var post_url = $(this).attr("href")+"&ajaxload=false";
@@ -80,7 +67,7 @@ $(document).ready(function(){
             
             $("#secondaryContent").fadeOut();
             $("#single-post-container").load(post_url, function(){$("#secondaryContent").fadeIn('fast');});
-
+            $("body").addClass("openwindow");
             return false;
         });
     }
@@ -88,6 +75,7 @@ $(document).ready(function(){
     $('#closeContent').click(function(){
         $("#secondaryContent").fadeOut('fast',function(){
             $("#single-post-container").empty();
+            $("body").removeClass("openwindow");
         });
             
     });

@@ -37,7 +37,12 @@
         </div>
         <div id="headerlogo">
         <div id="homeLogo"><img id="logosmall" src="<?php echo get_template_directory_uri(); ?>/img/logo.png"></div>
-        <a class="nosotros" href="<?php echo esc_url( home_url( '/' ) ); ?>nosotros">Nosotros</a>
+        <?php if(ICL_LANGUAGE_CODE=='es'): ?>
+            <a class="nosotros es" href="<?php echo esc_url( home_url( '/' ) ); ?>nosotros">Nosotros</a>
+        <?php elseif(ICL_LANGUAGE_CODE=='en'): ?>
+            <a class="nosotros en" href="http://frutabomba.com.mx/tests/viaverde/nosotros/?lang=en">About Us</a>
+         <?php endif;?>
+        
         </div>
         <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
         <nav class="menu-idiomas">
