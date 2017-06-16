@@ -18,7 +18,6 @@ if($ajaxload == false)
 	<article class="postWrapper" id="post-<?php the_ID(); ?>">
             
            <div id="footerLogo"></div>
-           <h1>Contactoxxx</h1>
            <?php
 
              $args = array(
