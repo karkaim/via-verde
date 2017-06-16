@@ -18,11 +18,11 @@ if($ajaxload == false)
 	<article class="postWrapper" id="post-<?php the_ID(); ?>">
             
            <div id="footerLogo"></div>
-           <h1>Contacto</h1>
+           <h1>Contactoxxx</h1>
            <?php
 
              $args = array(
-               'post_type' => 'contacto',
+               'post_type' => 'contacto_footer',
                'hide_empty' => false,
                'posts_per_page' => 3,
              );
