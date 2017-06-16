@@ -17,6 +17,7 @@ $(document).ready(function(){
     var post_url3i = myURL+"categorias_bloques/characteristics/?lang=en&ajaxload=false";
     var post_url4i = myURL+"categorias_bloques/installation/?lang=en&ajaxload=false";
     var post_url5i = myURL+"categorias_bloques/maintenance/?lang=en&ajaxload=false";
+    var post_url6i = myURL+"contacto/?lang=en&ajaxload=false";
 
     $.ajaxSetup({cache:false});
     
@@ -30,13 +31,15 @@ $(document).ready(function(){
     $("#home-caracteristicas.es").load(post_url3,ajaxLoadBloques);
     $("#home-instalacion.es").load(post_url4,ajaxLoadBloques);
     $("#home-mantenimiento.es").load(post_url5,ajaxLoadBloques);
-    $("#home-contacto").load(post_url6);
+    $("#home-contacto.es").load(post_url6);
 
     $("#home-que-es.en").load(post_url1i,ajaxLoadBloques);
     $("#home-beneficios.en").load(post_url2i,ajaxLoadBloques);
     $("#home-caracteristicas.en").load(post_url3i,ajaxLoadBloques);
     $("#home-instalacion.en").load(post_url4i,ajaxLoadBloques);
     $("#home-mantenimiento.en").load(post_url5i,ajaxLoadBloques);
+    $("#home-contacto.en").load(post_url6i,ajaxLoadBloques);
+
     
     
     $('.menu-menu-1-container ul li a').click(function(e){e.preventDefault();});

@@ -17,18 +17,12 @@ if($ajaxload == false)
 <section class="section-home en" id="home-caracteristicas"></section>
 <section class="section-home en" id="home-instalacion"></section>
 <section class="section-home en" id="home-mantenimiento"></section>
-<section class="section-home" id="home-contacto"></section>
+<section class="section-home en" id="home-contacto"></section>
 
 <div id="secondaryContent" style="display: none;">
 	<div id="closeContent"></div>
 	<div id="single-post-container"></div>
 </div>
-
-<ul>
-	<li>
-		<span class="copyright">Todos los derechos reservados <?php echo date('Y'); ?></span>
-	</li>
-</ul>
 </section>
 
 

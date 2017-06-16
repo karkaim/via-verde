@@ -637,7 +637,7 @@ section#home-contacto.section-home {
     height: auto;
     padding-bottom: 0;
 }
-article#post-21.postWrapper {
+article#post-21.postWrapper, article#post-198.postWrapper {
     position: relative;
     width: 100%;
     box-shadow: none;
@@ -655,19 +655,19 @@ div#footerLogo {
 div#contactData {
     width: 50%;float: left;
 }
-article#post-21 ul {
+article#post-21 ul, article#post-198 ul  {
     width: 100%;
     max-width: 700px;
 }
-article#post-21 ul li {
+article#post-21 ul li, article#post-198 ul li {
     margin: 15px auto;
     padding: 15px 0px 15px 15px;
 }
-article#post-21 ul li div {
+article#post-21 ul li div, article#post-198 ul li div {
     display: inline-block;
     vertical-align: middle;
 }
-article#post-21 ul li div.contactTitle {
+article#post-21 ul li div.contactTitle, article#post-198 ul li div.contactTitle {
     text-align: right;
     padding-right: 15px;
     text-transform: uppercase;
@@ -677,14 +677,14 @@ article#post-21 ul li div.contactTitle {
     letter-spacing: 0.01em;
     width: 40%;
 }
-article#post-21 ul li div.contactContent {
+article#post-21 ul li div.contactContent, article#post-198 ul li div.contactContent {
     width: 50%;
     border-left: 1px solid #fff;
     padding: 15px 0px 15px 15px;
     vertical-align: middle;
     font-size: 0.8em;
 }
-article#post-21 ul li div.contactContent a {
+article#post-21 ul li div.contactContent a, article#post-198 ul li div.contactContent  {
     color: yellowgreen;
     text-decoration: underline;
 }
