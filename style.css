@@ -132,6 +132,7 @@ img {
 
 #navegacion {
     width: 100%;
+    min-width: 775px;
     padding: 10px;
     padding-bottom: 0;
     box-sizing: border-box;
@@ -188,6 +189,7 @@ a:hover.nosotros {
 
 .menu-menu-1-container, .menu-menu-ingles-container, .menu-menu-1-frances-container {
     width: 100%;
+    min-width: 775px;
     text-align: center;
 }
 
