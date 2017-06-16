@@ -41,15 +41,19 @@
             <a class="nosotros es" href="<?php echo esc_url( home_url( '/' ) ); ?>nosotros">Nosotros</a>
         <?php elseif(ICL_LANGUAGE_CODE=='en'): ?>
             <a class="nosotros en" href="http://frutabomba.com.mx/tests/viaverde/nosotros/?lang=en">About Us</a>
+        <?php elseif(ICL_LANGUAGE_CODE=='fr'): ?>
+            <a class="nosotros fr" href="http://frutabomba.com.mx/tests/viaverde/nosotros/?lang=fr">Qui sommes-nous</a>
          <?php endif;?>
         
         </div>
         <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
         <nav class="menu-idiomas">
         <?php if(ICL_LANGUAGE_CODE=='es'): ?>
-            <a class="select" href="#">ESP</a><a href="<?php echo esc_url( home_url( '/' ) ); ?>/?lang=en">ENG</a>
+            <a class="select" href="#">ESP</a><a href="<?php echo esc_url( home_url( '/' ) ); ?>?lang=en">ENG</a><a href="<?php echo esc_url( home_url( '/' ) ); ?>?lang=fr">FRA</a>
         <?php elseif(ICL_LANGUAGE_CODE=='en'): ?>
-            <a href="<?php echo esc_url( home_url( '/' ) ); ?>/?lang=es">ESP</a><a class="select" href="#">ENG</a>
+            <a href="http://frutabomba.com.mx/tests/viaverde/?lang=es">ESP</a><a class="select" href="#">ENG</a><a href="http://frutabomba.com.mx/tests/viaverde/?lang=fr">FRA</a>
+        <?php elseif(ICL_LANGUAGE_CODE=='fr'): ?>
+            <a href="http://frutabomba.com.mx/tests/viaverde/?lang=es">ESP</a><a href="http://frutabomba.com.mx/tests/viaverde/?lang=en">ENG</a><a class="select" href="#">FRA</a>
          <?php endif;?>
         </nav>
     </header>

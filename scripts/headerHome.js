@@ -19,6 +19,14 @@ $(document).ready(function(){
     var post_url5i = myURL+"categorias_bloques/maintenance/?lang=en&ajaxload=false";
     var post_url6i = myURL+"contacto/?lang=en&ajaxload=false";
 
+
+    var post_url1f = myURL+"categorias_bloques/quest-ce-que-cest/?lang=fr&ajaxload=false";
+    var post_url2f = myURL+"categorias_bloques/benefices/?lang=fr&ajaxload=false";
+    var post_url3f = myURL+"categorias_bloques/caracteristiques/?lang=fr&ajaxload=false";
+    var post_url4f = myURL+"categorias_bloques/installation-fr/?lang=fr&ajaxload=false";
+    var post_url5f = myURL+"categorias_bloques/entretien/?lang=fr&ajaxload=false";
+    var post_url6f = myURL+"contacto/?lang=fr&ajaxload=false";
+
     $.ajaxSetup({cache:false});
     
     $("#home-inicio").load(post_url0, function(){
@@ -39,6 +47,13 @@ $(document).ready(function(){
     $("#home-instalacion.en").load(post_url4i,ajaxLoadBloques);
     $("#home-mantenimiento.en").load(post_url5i,ajaxLoadBloques);
     $("#home-contacto.en").load(post_url6i,ajaxLoadBloques);
+
+    $("#home-que-es.fr").load(post_url1f,ajaxLoadBloques);
+    $("#home-beneficios.fr").load(post_url2f,ajaxLoadBloques);
+    $("#home-caracteristicas.fr").load(post_url3f,ajaxLoadBloques);
+    $("#home-instalacion.fr").load(post_url4f,ajaxLoadBloques);
+    $("#home-mantenimiento.fr").load(post_url5f,ajaxLoadBloques);
+    $("#home-contacto.fr").load(post_url6f,ajaxLoadBloques);
 
     
     
@@ -62,7 +77,7 @@ $(document).ready(function(){
             return false;
         });
 
-        $(".en a.titleBlock, .en a.greenCircle, a.nosotros.en").click(function(){
+        $(".en a.titleBlock, .en a.greenCircle, a.nosotros.en, .fr a.titleBlock, .fr a.greenCircle, a.nosotros.fr").click(function(){
             //console.log('clicked');
             $.ajaxSetup({cache:false});
             var post_url = $(this).attr("href")+"&ajaxload=false";
@@ -94,7 +109,7 @@ $(document).ready(function(){
     		$('ul#menu-main-menu').show(); 
     	});
     
-    $('#menu-menu-1 a, #menu-menu-ingles a').each(function() {
+    $('#menu-menu-1 a, #menu-menu-ingles a, #menu-menu-1-frances a').each(function() {
         var href = $(this).attr('href');
         $(this).attr("href", "#home-" + href.match(/([^\/]*)\/*$/)[1]);
 
@@ -116,7 +131,7 @@ $(document).ready(function(){
     $(document).on("scroll", onScroll);
     function onScroll(event){
     var scrollPos = $(document).scrollTop();
-        $('#menu-menu-1 a, #menu-menu-ingles a').each(function () {
+        $('#menu-menu-1 a, #menu-menu-ingles a, #menu-menu-1-frances a').each(function () {
             var currLink = $(this);
             var refElement = $(currLink.attr("href"));
             if (refElement.position().top - 145 <= scrollPos && refElement.position().top - 14 + refElement.height() > scrollPos) {

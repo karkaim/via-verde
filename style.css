@@ -186,25 +186,25 @@ a:hover.nosotros {
     color: #fff;
 }
 
-.menu-menu-1-container, .menu-menu-ingles-container {
+.menu-menu-1-container, .menu-menu-ingles-container, .menu-menu-1-frances-container {
     width: 100%;
     text-align: center;
 }
 
-ul#menu-menu-1, ul#menu-menu-ingles {
+ul#menu-menu-1, ul#menu-menu-ingles, ul#menu-menu-1-frances{
     display: inline-block;
     padding-top: 0px;
     border-top: 1px solid #000;
     margin-top: 5px;
 }
 
-ul#menu-menu-1 li, ul#menu-menu-ingles li{
+ul#menu-menu-1 li, ul#menu-menu-ingles li, ul#menu-menu-1-frances li{
     display: inline-block;
     margin: 10px 0px;
     border-right: 1px solid #000;
 }
 
-ul#menu-menu-1 li a, ul#menu-menu-ingles li a {
+ul#menu-menu-1 li a, ul#menu-menu-ingles li a, ul#menu-menu-1-frances li a {
     text-transform: uppercase;
     letter-spacing: -1px;
     padding: 0px 15px;
@@ -212,11 +212,11 @@ ul#menu-menu-1 li a, ul#menu-menu-ingles li a {
     font-size: 14px;
 }
 
-ul#menu-menu-1 li a:hover, ul#menu-menu-1 li a.select, ul#menu-menu-ingles li a:hover, ul#menu-menu-ingles li a.select{
+ul#menu-menu-1 li a:hover, ul#menu-menu-1 li a.select, ul#menu-menu-ingles li a:hover, ul#menu-menu-ingles li a.select, ul#menu-menu-1-frances li a:hover, ul#menu-menu-1-frances li a.select{
   font-family: 'Gotham-Bold';
 }
 
-ul#menu-menu-1 li:last-child, ul#menu-menu-ingles  li:last-child {
+ul#menu-menu-1 li:last-child, ul#menu-menu-ingles  li:last-child, ul#menu-menu-1-frances  li:last-child {
     border-right:none;
 }
 
@@ -300,27 +300,27 @@ img.icon {
     width: 80px;}
 
 
-article#post-39, article#post-229 {
+article#post-39, article#post-229, article#post-429 {
     top: 28%;
     left: 13%;
 }
 
-article#post-50, article#post-230 {
+article#post-50, article#post-230, article#post-430 {
     left: 13%;
     top: 60%;
 }
 
-article#post-54, article#post-231 {
+article#post-54, article#post-231, article#post-431 {
     right: 6%;
     top: 40%;
 }
 
-article#post-58, article#post-232 {
+article#post-58, article#post-232, article#post-432 {
     left: 38%;
     top: 43%;
 }
 
-article#post-58 img.icon, article#post-232 img.icon{
+article#post-58 img.icon, article#post-232 img.icon, article#post-432 img.icon{
     right: -100px;
     left: initial;
 }
@@ -345,22 +345,22 @@ section#home-beneficios {
     padding-left: 40px;
 }
 
-article#post-92, article#post-226 {
+article#post-92, article#post-226, article#post-426 {
     top: 28%;
     right: 4%;
 }
 
-article#post-85, article#post-227 {
+article#post-85, article#post-227, article#post-427 {
     right: 28%;
     top: 60%;
 }
 
-article#post-81, article#post-228 {
+article#post-81, article#post-228, article#post-428 {
     right: 30%;
     top: 20%;
 }
 
-article#post-63, article#post-233 {
+article#post-63, article#post-233, article#post-433 {
     left: 13%;
     top: 60%;
 }
@@ -379,23 +379,22 @@ section#home-caracteristicas {
     padding-right: 40px;
 }
 
-article#post-110, article#post-223 {
-    top: 50%;
+article#post-110, article#post-223, article#post-423 {
+    top: 60%;
     right: 4%;
 }
-article#post-110{top: 60%;}
 
-article#post-110 img.icon, article#post-223 img.icon{
+article#post-110 img.icon, article#post-223 img.icon, article#post-423 img.icon{
     margin-top: -115px;
     left: 50px;
 }
 
-article#post-109, article#post-224 {
+article#post-109, article#post-224, article#post-424 {
     right: 40%;
     top: 30%;
 }
 
-article#post-108, article#post-225 {
+article#post-108, article#post-225, article#post-425 {
     left: 13%;
     top: 60%;
 }
@@ -416,27 +415,27 @@ section#home-instalacion {
     padding-right: 40px;
 }
 
-article#post-114, article#post-219 {
+article#post-114, article#post-219, article#post-419  {
     right: 8%;
     top: 60%;
 }
 
-article#post-113, article#post-220 {
+article#post-113, article#post-220, article#post-420  {
     left: 13%;
     top: 60%;
 }
 
-article#post-112, article#post-221 {
+article#post-112, article#post-221, article#post-421  {
     right: 47%;
     top: 44%;
 }
 
-article#post-112 img.icon, article#post-221 img.icon{
+article#post-112 img.icon, article#post-221 img.icon, article#post-421 img.icon{
     margin-top: -115px;
     left: 50px;
 }
 
-article#post-111, article#post-222 {
+article#post-111, article#post-222, article#post-422  {
     left: 13%;
     top: 20%;
 }
@@ -455,17 +454,17 @@ section#home-mantenimiento {
     padding-left: 40px;
 }
 
-article#post-117, article#post-216 {
+article#post-117, article#post-216, article#post-416 {
     top: 63%;
     left: 35%;
 }
 
-article#post-116, article#post-217 {
+article#post-116, article#post-217, article#post-417 {
     right: 12%;
     top: 23%;
 }
 
-article#post-115, article#post-218 {
+article#post-115, article#post-218, article#post-418 {
     left: 10%;
     top: 28%;
 }
@@ -637,7 +636,7 @@ section#home-contacto.section-home {
     height: auto;
     padding-bottom: 0;
 }
-article#post-21.postWrapper, article#post-198.postWrapper {
+article#post-21.postWrapper, article#post-198.postWrapper, article#post-438.postWrapper {
     position: relative;
     width: 100%;
     box-shadow: none;
@@ -655,19 +654,19 @@ div#footerLogo {
 div#contactData {
     width: 50%;float: left;
 }
-article#post-21 ul, article#post-198 ul  {
+article#post-21 ul, article#post-198 ul, article#post-438 ul  {
     width: 100%;
     max-width: 700px;
 }
-article#post-21 ul li, article#post-198 ul li {
+article#post-21 ul li, article#post-198 ul li, article#post-438 ul li {
     margin: 15px auto;
     padding: 15px 0px 15px 15px;
 }
-article#post-21 ul li div, article#post-198 ul li div {
+article#post-21 ul li div, article#post-198 ul li div, article#post-438 ul li div {
     display: inline-block;
     vertical-align: middle;
 }
-article#post-21 ul li div.contactTitle, article#post-198 ul li div.contactTitle {
+article#post-21 ul li div.contactTitle, article#post-198 ul li div.contactTitle, article#post-438 ul li div.contactTitle {
     text-align: right;
     padding-right: 15px;
     text-transform: uppercase;
@@ -677,14 +676,14 @@ article#post-21 ul li div.contactTitle, article#post-198 ul li div.contactTitle 
     letter-spacing: 0.01em;
     width: 40%;
 }
-article#post-21 ul li div.contactContent, article#post-198 ul li div.contactContent {
+article#post-21 ul li div.contactContent, article#post-198 ul li div.contactContent, article#post-438 ul li div.contactContent {
     width: 50%;
     border-left: 1px solid #fff;
     padding: 15px 0px 15px 15px;
     vertical-align: middle;
     font-size: 0.8em;
 }
-article#post-21 ul li div.contactContent a, article#post-198 ul li div.contactContent a{
+article#post-21 ul li div.contactContent a, article#post-198 ul li div.contactContent a, article#post-438 ul li div.contactContent a{
     color: yellowgreen;
     text-decoration: underline;
 }
