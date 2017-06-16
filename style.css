@@ -684,7 +684,7 @@ article#post-21 ul li div.contactContent, article#post-198 ul li div.contactCont
     vertical-align: middle;
     font-size: 0.8em;
 }
-article#post-21 ul li div.contactContent a, article#post-198 ul li div.contactContent  {
+article#post-21 ul li div.contactContent a, article#post-198 ul li div.contactContent a{
     color: yellowgreen;
     text-decoration: underline;
 }
