@@ -49,6 +49,7 @@ if($ajaxload == false)
       <?php elseif(ICL_LANGUAGE_CODE=='fr'): ?>
           <?php echo do_shortcode('[contact-form-7 id="449" title="Contact Francés"]');?>
        <?php endif;?>
+
 		</div>
 
     </article>

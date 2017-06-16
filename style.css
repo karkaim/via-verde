@@ -132,6 +132,7 @@ img {
 
 #navegacion {
     width: 100%;
+    min-width: 775px;
     padding: 10px;
     padding-bottom: 0;
     box-sizing: border-box;
@@ -188,6 +189,7 @@ a:hover.nosotros {
 
 .menu-menu-1-container, .menu-menu-ingles-container, .menu-menu-1-frances-container {
     width: 100%;
+    min-width: 775px;
     text-align: center;
 }
 
@@ -236,12 +238,12 @@ nav.menu-idiomas {
     width: 100%;
     padding: 5px 10px;
     text-decoration: underline;
-    font-family: 'Gotham-Book'; 
     font-size: 15px;
+    font-family: 'Gotham-Bold';
 }
 
 .menu-idiomas a.select {
-    font-family: 'Gotham-Bold';
+  font-family: 'Gotham-Book'; 
 }
 
 /* HOME */
@@ -605,13 +607,19 @@ article#post-115, article#post-218, article#post-418 {
     border-bottom: 1px solid #d4d5d7;
     margin-bottom: 25px;
 }
+
 #single-post-container p {
-    /*text-transform: uppercase;*/
     margin:15px auto;
     text-align: left;
     font-size: 1.3em;
     line-height: 1.4;
 }
+
+#single-post-container  li {
+    font-size: 1.3em;
+    line-height: 1.5;
+}
+
 #single-post-container p a{text-decoration: underline;color: #666}
 #single-post-container p a:hover{color: #000;}
 #single-post-container p img,.post img{display: block; margin: 15px auto;}
