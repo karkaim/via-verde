@@ -18,6 +18,7 @@ if($ajaxload == false)
 	<article class="postWrapper" id="post-<?php the_ID(); ?>">
             
            <div id="footerLogo"></div>
+           <div id="contactData">
            <?php
 
              $args = array(
@@ -38,8 +39,12 @@ if($ajaxload == false)
 			<?php endwhile; ?>
 			</ul>
 		<?php endif; ?>
-		
+		</div>
+		<div id="contactForm">
+			<?php echo do_shortcode('[contact-form-7 id="397" title="Formulario de contacto 1"]');?>
+		</div>
 
+		<div id="footerInfo"></div>
     </article>
 
   <?php

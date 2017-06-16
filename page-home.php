@@ -23,12 +23,6 @@ if($ajaxload == false)
 	<div id="closeContent"></div>
 	<div id="single-post-container"></div>
 </div>
-
-<ul>
-	<li>
-		<span class="copyright">Todos los derechos reservados <?php echo date('Y'); ?></span>
-	</li>
-</ul>
 </section>
 
 
