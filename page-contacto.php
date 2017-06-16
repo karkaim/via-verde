@@ -41,10 +41,16 @@ if($ajaxload == false)
 		<?php endif; ?>
 		</div>
 		<div id="contactForm">
-			<?php echo do_shortcode('[contact-form-7 id="397" title="Formulario de contacto 1"]');?>
+			
+      <?php if(ICL_LANGUAGE_CODE=='es'): ?>
+          <?php echo do_shortcode('[contact-form-7 id="397" title="Formulario de contacto 1"]');?>
+      <?php elseif(ICL_LANGUAGE_CODE=='en'): ?>
+          <?php echo do_shortcode('[contact-form-7 id="448" title="Contact English"]');?>
+      <?php elseif(ICL_LANGUAGE_CODE=='fr'): ?>
+          <?php echo do_shortcode('[contact-form-7 id="449" title="Contact Francés"]');?>
+       <?php endif;?>
 		</div>
 
-		<div id="footerInfo"></div>
     </article>
 
   <?php
