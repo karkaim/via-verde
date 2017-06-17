@@ -157,7 +157,16 @@ $(document).ready(function(){
        
     }); 
 
-
+    $('#mobileMenu').click(function(){
+        var wWidth = $(window).width();
+        if(wWidth <= 900)
+            $('.menu-menu-1-container, .menu-menu-ingles-container, .menu-menu-1-frances-container, a.nosotros').fadeToggle();
+    });
+    $('ul#menu-menu-1 li a, ul#menu-menu-ingles li a, ul#menu-menu-1-frances li a, a.nosotros').click(function(){
+        var wWidth = $(window).width();
+        if(wWidth <= 900)
+            $('.menu-menu-1-container, .menu-menu-ingles-container, .menu-menu-1-frances-container, a.nosotros').fadeOut();
+    });
 
 
 
