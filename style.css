@@ -755,3 +755,64 @@ input.wpcf7-form-control.wpcf7-submit:active {
     background: #999;
     color: #000;
 }
+
+/* Mobile */
+
+@media screen and (max-width:900px) {
+
+    header#navegacion {
+    display: none;
+    }
+
+    .section-home h1.bloqueTitulo {
+    text-align: center !important;
+    padding: 0 !important;
+    padding-top: 50px !important;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 30px;
+    margin-bottom: 90px;
+    }
+
+    .postWrapper {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 90px;
+    position: relative;
+    left: 0 !important;
+    top: 0 !important;
+    right: 0!important;
+    }
+
+    #home-contacto .postWrapper{display: inline-block; margin-bottom: 0;}
+
+    div#contactData{
+    width: 100%;
+    }
+
+    div#contactForm {
+    float: initial;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    }
+
+    article#post-21 ul li div.contactTitle, article#post-198 ul li div.contactTitle, article#post-438 ul li div.contactTitle{font-size: 3vw; width: 30%;}
+
+    .postWrapper img.icon {
+    position: absolute;
+    margin-top: -70px !important;
+    margin-left: -40px !important;
+    left: 50% !important;
+    right: initial !important;
+    }
+
+    #secondaryContent{
+      width: 90%;
+      height: 90vh;
+      top: 5%;}
+
+    #single-post-container p{font-size: 1em;}
+
+}
